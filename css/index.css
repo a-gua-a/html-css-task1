@@ -1,0 +1,525 @@
+.wrapper{
+    display: flex;
+    margin:0 auto;
+    width: 1200px;
+}
+body{
+    background-color: #f3f5f7;
+}
+.header{
+    background-color: white;
+    height: 100px;
+}
+.java{
+    background-color: blueviolet;
+    height: 316px;
+}
+.header>.wrapper{
+    padding: 29px 0 30px 0;
+}
+.logo{
+    display: block;
+    width: 195px;
+	height: 41px;
+	background-image: url(../images/logo.png);
+    margin-right: 102px;
+    font-size: 0;
+}
+.nav {
+    display: flex;
+    width: 244px;
+	height: 35px;
+    font-family: PingFangSC-Regular;
+	font-size: 19px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 27px;
+	letter-spacing: 0px;
+	color: #333333;
+    margin-right: 96px;
+    margin-top: 6px;
+}
+#subject{
+    margin-left: 16px;
+    margin-right: 20px;
+}
+.nav li a{
+    height: 35px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.nav li .active,
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+.search{
+    display: flex;
+    width: 412px;
+	height: 40px;
+	background-color: #f3f5f7;
+	border-radius: 20px;
+    margin-right: 32px;
+    padding-left: 19px;
+    padding-right: 12px;
+}
+.search input{
+    flex:1;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+.search a{
+    align-self: center;
+    background-image: url(../images/search.png);
+    width: 16px;
+	height: 16px;
+}
+.user{
+    display: flex;
+    width: 116px;
+	height: 30px;
+    margin-top: 4px;
+}
+.user img{
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.user span{
+    color: #666666;
+    font-size: 16px;
+}
+.banner{
+    background-color: #0092cb;
+    height: 420px;
+}
+.banner .wrapper{
+    background-color: #0092cb;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+    justify-content: space-between;
+}
+.banner .wrapper>ul{
+    flex-direction: column;
+    width: 191px;
+	height: 420px;
+    background-color: #005576;
+}
+.banner .wrapper ul li{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 191px;
+	height: 46px;
+    align-content: center;
+}
+.banner .wrapper ul li a{
+    display: block;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0px;
+	color: white;
+    background: url(../images/right.png) no-repeat  right center;
+}
+.banner .wrapper ul li a:hover{
+    color: #00a4ff;
+    background: url(../images/right-hover.png) no-repeat  right center;
+}
+.timetable{
+    width: 218px;
+	height: 305px;
+    background-color: #209dd5;
+    border-radius: 10px;
+    flex-direction: column;
+    align-self: center;
+}
+.timetable h3{
+    width: 75px;
+	height: 21px;
+	font-family: PingFangSC-Medium;
+	font-size: 15px;
+	line-height: 20px;
+	color: #ffffff;
+    margin-top: 18px;
+    margin-left: 14px;
+    margin-bottom: 8px;
+}
+.timetable .content{
+    width: 218px;
+	height: 257px;
+	background-color: #ffffff;
+    padding:2px 14px 14px;
+	border-radius: 10px;
+}
+.timetable dl{
+    height: 61px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 12px;
+}
+.timetable dl dt{
+    width: 190px;
+	height: 20px;
+	font-family: PingFangSC-Medium;
+	font-size: 14px;
+	font-weight: 700;
+	font-stretch: normal;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.timetable dl dd{
+    width: 190px;
+	height: 17px;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 16px;
+	letter-spacing: 0px;
+	color: #00a4ff;
+}
+.timetable dl dd strong{
+    color: #7d7d7d;
+    font-weight: 400;
+
+}
+.timetable dl dt ,
+.timetable dl dd{
+    margin-bottom: 8px;
+}
+.timetable .content a{
+    display: block;
+    width: 190px;
+	height: 32px;
+	background-color: #00a4ff;
+	border-radius: 15px;
+    margin-top: 20px;
+    padding: 6px 67px;
+    color: white;
+}
+.list{
+	height: 60px;
+    background-color: #f3f5f7;
+}
+.list .wrapper {
+	height: 60px;
+    margin-top: 11px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    padding: 18px 20px;
+}
+.list h3{
+    margin-right: 20px;
+    color: #00a4ff;
+}
+.list ul{
+    display: flex;
+    flex: 1;
+    font-family: PingFangSC-Regular;
+	font-size: 18px;
+    color: #333333;
+}
+.list ul li{
+    padding: 0 24px;
+    border-right: solid 1px #e0e0e0;
+}
+.list ul li:last-child{
+    border-right: none;
+}
+.list .modify{
+    margin-left: auto;
+    width: 64px;
+	height: 23px;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+    color: #00a4ff;
+}
+.recommend{
+    height: 601px;
+    background-color: #f3f5f7;
+    margin-top: 31px;
+} 
+.recommend h3{
+    display: flex;
+}
+.recommend h3 span{
+    width: 84px;
+	height: 30px;
+	font-family: PingFangSC-Regular;
+	font-size: 21px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 32px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.recommend h3 a{
+    display: block;
+    width: 76px;
+	height: 20px;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	line-height: 20px;
+    margin-left: auto;
+	color: #999999;
+    align-self: center;
+    background: url(../images/more.png) no-repeat  right center;
+}
+.recommend .wrapper{
+    flex-direction: column;
+}
+.wrapper .course{
+    margin-top: 15px;
+}
+.wrapper .course ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+	height: 556px;
+}
+.wrapper .course li{
+    display: flex;
+    width: 228px;
+	height: 271px;
+    background-color: white;
+    flex-direction: column;
+}
+.wrapper .course li img{
+    display: block;
+    width: 228px;
+	height: 156px;
+}
+.wrapper .course li div{
+    display: flex;
+    flex-direction: column;
+    width: 228px;
+	height: 115px;
+	background-color: #ffffff;
+	opacity: 0.5;
+    padding: 20px;
+}
+.wrapper .course li div h3{
+    font-family: PingFangSC-Regular;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+.wrapper .course li div p{
+    color: #999999;
+    width: 189px;
+	height: 20px;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+    margin-top: auto;
+}
+.wrapper .course li div p span{
+    color: #fa6400;
+}
+.web,
+.python,
+.ai,
+.java{
+    background-color: #f3f5f7;
+    margin-top: 31px;
+    height: 431px;
+}
+.web .wrapper,
+.python .wrapper,
+.ai .wrapper,
+.java .wrapper{
+    flex-direction: column;
+}
+.web .wrapper>h3,
+.python .wrapper>h3,
+.ai .wrapper>h3,
+.java .wrapper>h3{
+    display: flex;
+    font-family: PingFangSC-Regular;
+	font-size: 21px;
+	color: #333333;
+}
+.web .wrapper>h3 ul,
+.python .wrapper>h3 ul,
+.ai .wrapper>h3 ul,
+.java .wrapper>h3 ul{
+    display: flex;
+    width: 308px;
+	height: 23px;
+    margin-left: 299px;
+    justify-content: space-between;
+    align-items: center;
+}
+.python .wrapper>h3 ul{
+    margin-left: 251px;
+}
+.ai .wrapper>h3 ul{
+    margin-left: 320px;
+}
+.java .wrapper>h3 ul{
+    margin-left: 375px;
+}
+.web .wrapper>h3 ul a,
+.python .wrapper>h3 ul a,
+.ai .wrapper>h3 ul a,
+.java .wrapper>h3 ul a{
+    width: 32px;
+	height: 23px;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.web .wrapper>h3 ul a:hover,
+.python .wrapper>h3 ul a:hover,
+.ai .wrapper>h3 ul a:hover,
+.java .wrapper>h3 ul a:hover{
+    color: #00a4ff;
+}
+.web .wrapper>h3 span,
+.python .wrapper>h3 span,
+.ai .wrapper>h3 span,
+.java .wrapper>h3 span{
+    width: 147px;
+	height: 30px;
+    font-weight: normal;
+	font-stretch: normal;
+	font-family: PingFangSC-Regular;
+	font-size: 21px;
+	line-height: 32px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.python .wrapper>h3 span{
+    width: 195px;
+}
+.ai .wrapper>h3 span{
+    width: 126px;
+}
+.java .wrapper>h3 span{
+    width: 71px;
+}
+.web .wrapper>h3>a,
+.python .wrapper>h3>a,
+.ai .wrapper>h3>a,
+.java .wrapper>h3>a{
+    display: block;
+    width: 76px;
+	height: 20px;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	line-height: 20px;
+    margin-left: auto;
+	color: #999999;
+    align-self: center;
+    background: url(../images/more.png) no-repeat  right center;
+}
+.web .wrapper .content,
+.python .wrapper .content{
+    margin-top: 15px;
+    display: flex;
+    height: 386px;
+}
+.web .content .left,
+.python .content .left{
+    width: 228px;
+	height: 386px;
+}
+.web .content .right,
+.python .content .right{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 957px;
+    height: 386px;
+}
+.web .content .right .course ul,
+.python .content .right .course ul{
+    width: 957px;
+	height: 271px;
+}
+.ai,
+.java{
+    background-color:  #f3f5f7;
+    height: 316px; 
+}
+.foot{
+    background-color: white;
+    margin-top: 60px;
+}
+.foot .wrapper{
+    padding: 60px 0 65px 0;
+    justify-content: space-between;
+}
+.foot .wrapper .left{
+    width: 432px;
+	height: 148px;
+}
+.foot .wrapper .left p{
+    width: 432px;
+	height: 33px;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 17px;
+	letter-spacing: 0px;
+	color: #666666;
+    margin-top: 24px;
+}
+.foot .wrapper .left a{
+    display: block;
+    width: 120px;
+	height: 36px;
+	background-color: #ffffff;
+	border: solid 1px #00a4ff;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 23px;
+	letter-spacing: 0px;
+	color: #00a4ff;
+    margin-top: 14px;
+    padding: 7px 27px;
+}
+.foot .wrapper .right{
+    width: 516px;
+	height: 151px;
+}
+.foot .wrapper .right table tr{
+    display: flex;
+}
+.foot .wrapper .right table tr .head{
+    display: block;
+    font-family: PingFangSC-Regular;
+	font-size: 16px;
+	font-weight: 700;
+	font-stretch: normal;
+	line-height: 23px;
+	letter-spacing: 0px;
+	color: #333333;
+    margin-bottom: 12px;
+}
+.foot .wrapper .right table tr td{
+    display: block;
+    font-family: PingFangSC-Regular;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: #666666;
+}
+.foot .wrapper .right table tr .l1{
+    width: 80px;
+    margin-right: 130px;
+}
+.foot .wrapper .right table tr .l2{
+    width: 112px;
+    margin-right: 130px;
+}
+.foot .wrapper .right table tr .l3{
+    width: 64px;
+}
